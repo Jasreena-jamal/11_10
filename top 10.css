@@ -20,12 +20,7 @@ body{
   font-weight: bolder;
   
 }
-/* .header2 {
-  grid-area: header2;
-  text-align: center;
-  font-size: 2em;
 
-} */
 .genre1 {
   grid-area: genre1;
   background-image: url("genre background/genre1.jpg");
@@ -70,9 +65,9 @@ body{
   background-color: antiquewhite;
   text-align: center;
   text-decoration: none;
-  padding-top: 80px;
-/*   padding-bottom: 80px;
-  transition-duration: 0.2s; */
+ /* padding-top: 80px;*/
+  /*padding-bottom: 80px;*/
+  transition-duration: 0.2s;  
   border-radius: 50px;
 
   max-width: 300px;                   
