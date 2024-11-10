@@ -1,0 +1,93 @@
+body{
+  background-color: rgb(216, 208, 199);
+}
+.main_container{
+  display: grid;
+  grid-template-rows:  1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header1 header1 header1 header1 header1"
+    /* "header2 header2 header2 header2 header2" */
+    "genre1 genre2 genre3 genre4 genre5";
+  gap: 0px 30px;
+
+}
+.header1 {
+  grid-area: header1;
+  text-align: center;
+  font-size: 2.8em;
+  padding-top: 30px;
+  font-weight: bolder;
+  
+}
+/* .header2 {
+  grid-area: header2;
+  text-align: center;
+  font-size: 2em;
+
+} */
+.genre1 {
+  grid-area: genre1;
+  background-image: url("genre background/genre1.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.genre2 {
+  grid-area: genre2;
+  background-image: url("genre background/genre2.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.genre3 {
+  grid-area: genre3;
+  background-image: url("genre background/genre3.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.genre4 {
+  grid-area: genre4;
+  background-image: url("genre background/genre4.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.genre5 {
+  grid-area: genre5;
+  background-image: url("genre background/genre5.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+
+.genre1, .genre2, .genre3 ,.genre4 ,.genre4 ,.genre5{
+  background-color: antiquewhite;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  transition-duration: 0.2s;
+  border-radius: 50px;
+
+
+}
+.genre1:hover,.genre2:hover,.genre3:hover,.genre4:hover,.genre5:hover {
+  opacity: 0.7; 
+  box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  
+}
+a {
+  color:white;
+  font-weight:bolder;
+  font-style: italic;
+  text-decoration: none;
+  font-size:30pt;
+  text-decoration-line: overline;
+
+}

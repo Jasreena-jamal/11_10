@@ -1,0 +1,119 @@
+body{
+  background-color: rgb(202, 186, 166)
+
+}
+.main_container{
+  display: grid;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "h1"
+    "genre_description"
+    "book1"
+    "book2"
+    "book3"
+    "book4"
+    "book5"
+    "book6"
+    "book7"
+    "book8"
+    "book9"
+    "book10"
+    "gototop_button";
+
+  gap: 20px;
+}
+h1 {
+  grid-area: h1;
+  font-size: 5em;
+  text-align: center;
+  background-image: url("genre background/common bg.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px;
+  margin:0;
+  color:bisque
+
+
+}
+
+#genre_description {
+  grid-area: genre_description;
+  margin-top:40px ;
+
+}
+#genre_description p{
+  font-size: 2em;
+  font-style: oblique;
+
+}
+.book1 {
+  grid-area: book1;
+}
+
+.book2 {
+  grid-area: book2;
+}
+
+.book3 {
+  grid-area: book3;
+}
+
+.book4 {
+  grid-area: book4;
+}
+
+.book5 {
+  grid-area: book5;
+}
+
+.book6 {
+  grid-area: book6;
+}
+
+.book7 {
+  grid-area: book7;
+}
+
+.book8 {
+  grid-area: book8;
+}
+
+.book9 {
+  grid-area: book9;
+}
+
+.book10 {
+  grid-area: book10;
+}
+
+
+.book-container{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+  /* flex-direction: column; */
+  /* margin-left: 700px; */
+  background-color:rgb(174, 160, 144);
+  margin: 30px;
+}
+
+.book-container p {
+  margin: 0; 
+}
+
+.book-container img {
+  max-height: 250px;
+  object-fit:cover;
+}
+p{
+  font-weight: bold;
+  font-size: 2.5em;
+}
+.gototop_button p{
+  /* background-color: white; */
+  font-size: 2em;
+  text-align: center;
+}
