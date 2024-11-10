@@ -91,3 +91,6 @@ a {
   text-decoration-line: overline;
 
 }
+a p{
+  padding-top: 70px;
+}
