@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>BookVerse</title>
-    </head>
-    <body>
-        <header>
-            <div><h1>BookVerse</h1></div>
-            <p>
-                <h3>
-                    For book lovers to discover their next read!
-                </h3>
-            </p>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <title>BookVerse_11_10</title>
+    <link rel="stylesheet" type="text/css" href="indexStyle.css">
+</head>
+<body>
+    <header>
+        <div><h1>BookVerse</h1></div>
+        <p>
+            <h3>
+                For book lovers to discover their next read!
+            </h3>
+        </p>
+    </header>
 
-        <nav>
-            <input type="text" placeholder="search by name">
-        </nav>
+    <nav class="search-bar-container">
+        <input type="text" class="search-bar" placeholder="search by name">
+        <button class="search-button">
+            <img class="search-icon" src="pictures/search.svg">
+        </button>
+    </nav>
 
+    <div class="content-conatiner">
         <div class="book-lists">
-            <p>
-                <a href="list-page.html">Discover Your Next Read Here</a>
-            </p>
-
+            <p>Discover Your Next Read Here</p>
+            <div class="arrow-container">
+                <a href="list-page.html">
+                    <img src="pictures/arrow.png" class="arrow">
+                </a>
+            </div>
         </div>
 
-        
+    
         <div class="top10">
-            <div>
-                best top-10 picks for each genre
-            </div>
-            <aside>
-                <div>
-                    <a href="top-10.html">Top-10 book recommendation</a>
+            <div class="t-left">
+                <p>best top-10 picks for each genre</p>
+                <div class="arrow-container">
+                    <a href="top-10.html">
+                        <img src="pictures/arrow.png" class="arrow">
+                    </a>
                 </div>
-            </aside>
+            </div>
             
         </div>
 
-        <div class="quotes">
-            <div>
-                <a href="quotes-page.html">Inspiring Qoutes</a>
+        <div class="quotes-container">
+            <div class="left">
+                <p>Inspiring Quotes</p>
+                <div class="right">
+                    <p class="quote"><em>"Thats the thing about books. They let you 
+                        travel without moving your feet."</em>
+                    <span class="author">-THE NAMESAKE BY JHUMPA LAHIRI</span></p>
+                </div>
+                <div class="arrow-container">
+                    <a href="quotes-page.html">
+                        <img src="pictures/arrow.png" class="arrow">
+                    </a>
+                </div>
             </div>
-            <div>
-                <p>Example:...</p>
+            
+        </div>
+
+    </div>
+    
+    <footer>
+        <div class="contact">
+            <p><strong> Book Enquiry</strong></p>
+            <p>Contact us here:</p>
+            <div class="email">
+                <p>bookverse@gmail.com</p>
+            </div>
+            <div class="phone-number">
+                <p>+971-23-4567890</p>
             </div>
         </div>
 
-        <footer>
-            <div>
-                <p>For Book Enquiry</p>
-                <p>Contact us here:</p>
-                <div class="email">
-                    <!--icon-->
-                    <p>bookverse@gmail.com</p>
-                </div>
-                <div class="phone-number">
-                    <!--icon-->
-                    <p>+971-23-4567890</p>
-                </div>
-            </div>
-
-            <aside>
-                <p>Feedback:</p>
-                <textarea placeholder="give us your feedback"></textarea>
-            </aside>
-        </footer>
+        <div class="feedback">
+            <p class="feed-p">Feedback:</p>
+            <textarea class="feedback-box" placeholder="give us your feedback"></textarea>
+            <button class="submit-button">Submit</button>
+        </div>
+    </footer>
 
 
-    </body>
-</html>
+</body>
+</html> 
