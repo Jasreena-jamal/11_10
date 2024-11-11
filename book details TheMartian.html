@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+		nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 2px solid #ccc;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            <!--margin: 20px auto;-->
+            border: 1px solid white; 
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .book-cover {
+            width: 225px;
+            height: 300px;
+            background-color: #eee;
+            margin-right: 20px;
+        }
+        .details {
+            flex: 1;
+        }
+        .book-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .book-author {
+            font-size: 18px;
+            color: #555;
+            margin: 5px 0 15px 0;
+        }
+        .rating {
+            margin: 10px 0;
+        }
+        .rating span {
+            font-size: 20px;
+            color: gold;
+        }
+        .description {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #333;
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        .info span {
+            display: block;
+            margin-top: 5px;
+        }
+		.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Drop-down menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 10px 0;
+            z-index: 1;
+            border: 1px solid #ddd;
+        }
+
+        /* Drop-down links */
+        .dropdown-content a {
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+            font-size: 15px;
+        }
+        .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Show the drop-down menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+	<div class="dropdown">
+		<a href="#">Browse ▼</a>
+		<div class="dropdown-content">
+		<div style="text-align:center; font-weight: bold; color: #333;">GENRES</a> </div>
+		<a href="#">Fantasy</a>
+        <a href="#">Fiction</a>
+        <a href="#">Mystery/Thriller</a>
+        <a href="#">Young Adult</a>
+        <a href="#">Classic and War</a>
+		</div>
+		</div>
+</nav>
+
+ <div class="container">
+
+        <!-- Book Cover Placeholder -->
+		<img class="book-cover" src="Book-covers/TheMartian cover.jpg" alt="book cover">
+
+    <div class="details">
+        <h1 class="book-title">The Martian</h1>
+        <p class="book-author">by Andy Weir</p>
+
+        <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+            <small>4.42</small>
+        </div>
+
+        <div class="description">
+            <p>Six days ago, astronaut Mark Watney became one of the first people to walk on Mars.</p>
+			<p>Now, he’s sure he’ll be the first person to die there. </p>
+			<p>After a dust storm nearly kills him and forces his crew to evacuate while thinking him dead, Mark finds himself stranded and completely alone with no way to even signal Earth that he’s alive—and even if he could get word out, his supplies would be gone long before a rescue could arrive. </p>
+			<p>Chances are, though, he won’t have time to starve to death. The damaged machinery, unforgiving environment, or plain-old “human error” are much more likely to kill him first. </p>
+			<p>But Mark isn’t ready to give up yet. Drawing on his ingenuity, his engineering skills — and a relentless, dogged refusal to quit — he steadfastly confronts one seemingly insurmountable obstacle after the next. Will his resourcefulness be enough to overcome the impossible odds against him? </p>
+		</div>
+
+        <div class="info">
+            <span><strong>Release Date:</strong> September 27, 2011</span>
+            <span><strong>Length:</strong> 384 pages</span>
+        </div>
+    </div>
+<!--</div>-->
+
+</body>
+</html>
