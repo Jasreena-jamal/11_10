@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+		nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 2px solid #ccc;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            <!--margin: 20px auto;-->
+            border: 1px solid white; 
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .book-cover {
+            width: 225px;
+            height: 300px;
+            background-color: #eee;
+            margin-right: 20px;
+        }
+        .details {
+            flex: 1;
+        }
+        .book-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .book-author {
+            font-size: 18px;
+            color: #555;
+            margin: 5px 0 15px 0;
+        }
+        .rating {
+            margin: 10px 0;
+        }
+        .rating span {
+            font-size: 20px;
+            color: gold;
+        }
+        .description {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #333;
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        .info span {
+            display: block;
+            margin-top: 5px;
+        }
+		.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Drop-down menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 10px 0;
+            z-index: 1;
+            border: 1px solid #ddd;
+        }
+
+        /* Drop-down links */
+        .dropdown-content a {
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+            font-size: 15px;
+        }
+        .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Show the drop-down menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+	<div class="dropdown">
+		<a href="#">Browse ▼</a>
+		<div class="dropdown-content">
+		<div style="text-align:center; font-weight: bold; color: #333;">GENRES</a> </div>
+		<a href="#">Fantasy</a>
+        <a href="#">Fiction</a>
+        <a href="#">Mystery/Thriller</a>
+        <a href="#">Young Adult</a>
+        <a href="#">Classic and War</a>
+		</div>
+		</div>
+</nav>
+
+ <div class="container">
+
+        <!-- Book Cover Placeholder -->
+		<img class="book-cover" src="Book-covers/Mistborn cover.jpg" alt="book cover">
+
+    <div class="details">
+        <h1 class="book-title">Mistborn: The Final Empire</h1>
+        <p class="book-author">by Brandon Sanderson</p>
+
+        <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+            <small>4.48</small>
+        </div>
+
+        <div class="description">
+            <p>For a thousand years, ash fell and no flowers bloomed. For a thousand years, the Skaa slaved in misery and lived in fear. For a thousand years, the Lord Ruler reigned with absolute power and ultimate terror, divinely invincible. Then, when all hope was lost, the scarred, heartbroken half-Skaa Kelsier found in himself the powers of a Mistborn.<br>A brilliant thief and natural leader, Kelsier recruits the underworld's smartest and most trustworthy allomancers, who each share one of his many powers and relish a high-stakes challenge. Only then does he reveal his ultimate dream: not just the greatest heist in history, but the downfall of the divine despot.</p>
+			<p>But even with the best criminal crew ever assembled, Kel's plan looks like the ultimate long shot, until luck brings a ragged girl named Vin into his life. Like him, she's a half-Skaa orphan, but she's lived a much harsher life. Vin has learned to expect betrayal from everyone she meets. She will have to learn to trust, if Kel is to help her master powers that she’s never dreamed of.</p>
+        </div>
+
+        <div class="info">
+            <span><strong>Release Date:</strong> July 17, 2006</span>
+            <span><strong>Length:</strong> 576 pages</span>
+        </div>
+    </div>
+<!--</div>-->
+
+</body>
+</html>
