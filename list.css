@@ -1,0 +1,74 @@
+
+/* General Body Styling */
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f8f3eb; /* Light beige */
+color: #5a4635; /* Dark brown */
+margin: 0;
+padding: 20px;
+}
+
+h1 {
+font-size: 2.5em;
+text-align: center;
+color: #3e2723; /* Rich brown */
+margin-bottom: 1.5em;
+}
+
+/* Genre Heading Styles */
+h2 {
+font-size: 2em;
+padding: 10px 15px;
+border-left: 6px solid #5a4635; /* Dark brown */
+margin-top: 2em;
+text-transform: uppercase;
+}
+
+/* Style for each genre section with unique brown and earthy tones */
+.fiction h2,
+.fantasy h2,
+.mystery h2,
+.ya h2,
+.classics h2 {
+background-color: #ede0d4; /* Beige */
+color: #6d4c41; /* Brown */
+}
+
+/* Book list styling */
+ul {
+list-style: none;
+padding: 0;
+}
+
+ul li {
+background-color: #fff; /* White for contrast */
+padding: 15px;
+margin: 10px 0;
+border-radius: 10px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul li:hover {
+transform: scale(1.02);
+box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Link Styling */
+ul li a {
+text-decoration: none;
+font-weight: bold;
+font-size: 1.1em;
+color: #5a4635; /* Dark brown */
+}
+
+ul li a:hover {
+color: #3e2723; /* Rich brown */
+}
+
+/* Author name styling */
+ul li em {
+font-weight: normal;
+font-style: italic;
+color: #8d6e63; /* Coffee brown */
+}
