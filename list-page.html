@@ -3,100 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Book List by Genre</title>
-    <style>
-        /* General Body Styling */
-        body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f3eb; /* Light beige */
-    color: #5a4635; /* Dark brown */
-    margin: 0;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 2.5em;
-    text-align: center;
-    color: #3e2723; /* Rich brown */
-    margin-bottom: 1.5em;
-}
-
-/* Genre Heading Styles */
-h2 {
-    font-size: 2em;
-    padding: 10px 15px;
-    border-left: 6px solid #5a4635; /* Dark brown */
-    margin-top: 2em;
-    text-transform: uppercase;
-}
-
-/* Style for each genre section with unique brown and earthy tones */
-.fiction h2 {
-    background-color: #fbe9e7; /* Soft peach */
-    color: #8d6e63; /* Coffee brown */
-}
-
-.fantasy h2 {
-    background-color: #ede0d4; /* Beige */
-    color: #6d4c41; /* Brown */
-}
-
-.mystery h2 {
-    background-color: #e0c7a1; /* Sand */
-    color: #4e342e; /* Espresso */
-}
-
-.ya h2 {
-    background-color: #f3e5d5; /* Warm cream */
-    color: #795548; /* Walnut */
-}
-
-.classics h2 {
-    background-color: #d7ccc8; /* Taupe */
-    color: #3e2723; /* Rich brown */
-}
-
-/* Book list styling */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    background-color: #fff; /* White for contrast */
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-ul li:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-/* Link Styling */
-ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #5a4635; /* Dark brown */
-}
-
-ul li a:hover {
-    color: #3e2723; /* Rich brown */
-}
-
-/* Author name styling */
-ul li em {
-    font-weight: normal;
-    font-style: italic;
-    color: #8d6e63; /* Coffee brown */
-}
-    </style>
+    <link rel="stylesheet" type="text/css" href="list.css">
 </head>
+
 <body>
     <h1>Books by Genre</h1>
+
+<section class="fiction">
 
     <h2>Fiction</h2>
     <ul>
@@ -105,47 +18,53 @@ ul li em {
         <li><a href= "book details NightCircus.html"><em>The Night Circus</em> by Erin Morgenstern</a></li>
         <li><a href="book details  NormalPeople.html"><em>Normal People</em> by Sally Rooney</a></li>
         <li><a href= "book details  CrowDads.html"><em>Where the Crawdads Sing</em> by Delia Owens</a></li>
-        <li><em>Pride and Prejudice</em> by Jane Austen</li>
-        <li><em>The Lord of the Rings</em> by J.R.R. Tolkien</li>
-        <li><em>The Book Thief</em> by Markus Zusak</li>
-        <li><em>Circe</em> by Madeline Miller</li>
-        <li><em>The Alchemist</em> by Paulo Coelho</li>
-        <li><em>Pachinko</em> by Min Jin Lee</li>
-        <li><em>The Martian</em> by Andy Weir</li>
-        <li><em>Little Women</em> by Louisa May Alcott</li>
-        <li><em>The Catcher in the Rye</em> by J.D. Salinger</li>
-        <li><em>Beloved</em> by Toni Morrison</li>
+        <li><a href= "book details Pride.html"><em>Pride and Prejudice</em> by Jane Austen</a></li>
+        <li><a href= "book details LordOfRings.html"><em>The Lord of the Rings</em> by J.R.R. Tolkien</a></li>
+        <li><a href= "book details BookThief.html"><em>The Book Thief</em> by Markus Zusak</a></li>
+        <li><a href= "book details Circe.html"><em>Circe</em> by Madeline Miller</a></li>
+        <li><a href= "book details TheAlchemist.html"><em>The Alchemist</em> by Paulo Coelho</a></li>
+        <li><a href= "book details Pachinko.html"><em>Pachinko</em> by Min Jin Lee</a></li>
+        <li><a href="book details The Martian"><em>The Martian</em> by Andy Weir</a></li>
+        <li><a href= "book details LitlleWomen"><em>Little Women</em> by Louisa May Alcott</a></li>
+        <li><a href= "book details The Catcher"><em>The Catcher in the Rye</em> by J.D. Salinger</a></li>
+        <li><a href= "book details Beloved.html"><em>Beloved</em> by Toni Morrison</a></li>
     </ul>
+</section>
+
+<section class="fantasy">
 
     <h2>Fantasy</h2>
     <ul>
-        <li><em>The Name of the Wind</em> by Patrick Rothfuss</li>
-        <li><em>A Song of Ice and Fire</em> series by George R.R. Martin</li>
-        <li><em>Mistborn: The Final Empire</em> by Brandon Sanderson</li>
-        <li><em>The Priory of the Orange Tree</em> by Samantha Shannon</li>
-        <li><em>The Hobbit</em> by J.R.R. Tolkien</li>
-        <li><em>Harry Potter</em> series by J.K. Rowling</li>
-        <li><em>Assassin's Apprentice</em> by Robin Hobb</li>
-        <li><em>His Dark Materials</em> by Philip Pullman</li>
-        <li><em>Eragon</em> by Christopher Paolini</li>
-        <li><em>The Princess Bride</em> by William Goldman</li>
-        <li><em>Words of Radiance</em> by Brandon Sanderson</li>
-        <li><em>The Mists of Avalon</em> by Marion Zimmer Bradley</li>
-        <li><em>Prince of Thorns</em> by Mark Lawrence</li>
-        <li><em>Good Omens</em> by Neil Gaiman and Terry Pratchett</li>
-        <li><em>The Lies of Locke Lamora</em> by Scott Lynch</li>
+        <li><a href= "book details NameOfWind.html"><em>The Name of the Wind</em> by Patrick Rothfuss</a></li>
+        <li><a href= "book details IceAndFire.html"><em>A Song of Ice and Fire</em> series by George R.R. Martin</a></li>
+        <li><a href= "book details Mistborn.html"><em>Mistborn: The Final Empire</em> by Brandon Sanderson</a></li>
+        <li><a href= "book details OrangeTree.html"><em>The Priory of the Orange Tree</em> by Samantha Shannon</a></li>
+        <li><a href= "book details TheHobbit.html"><em>The Hobbit</em> by J.R.R. Tolkien</a></li>
+        <li><a href= "book details HarryPotter.html"><em>Harry Potter</em> series by J.K. Rowling</a></li>
+        <li><a href= "book details Assassin's Apprentice.html"><em>Assassin's Apprentice</em> by Robin Hobb</a></li>
+        <li><a href= "book details DarkMaterials.html"><em>His Dark Materials</em> by Philip Pullman</a></li>
+        <li><a href= "book details Eragon.html"><em>Eragon</em> by Christopher Paolini</a></li>
+        <li><a href= "book details ThePrincessBride.html"><em>The Princess Bride</em> by William Goldman</a></li>
+        <li><a href= "book details WordsOfRadiance.html"><em>Words of Radiance</em> by Brandon Sanderson</a></li>
+        <li><a href= "book details MistOfAvalon.html"><em>The Mists of Avalon</em> by Marion Zimmer Bradley</a></li>
+        <li><a href= "book details PrinceOfThorns.html"><em>Prince of Thorns</em> by Mark Lawrence</a></li>
+        <li><a href= "book details GoodOmens.html"><em>Good Omens</em> by Neil Gaiman and Terry Pratchett</a></li>
+        <li><a href= "book details TheLiesOfLockeLamora.html"><em>The Lies of Locke Lamora</em> by Scott Lynch</a></li>
     </ul>
+</section>
+
+<section class="mystery">
 
     <h2>Mystery/Thriller</h2>
     <ul>
-        <li><em>Gone Girl</em> by Gillian Flynn</li>
-        <li><em>The Girl with the Dragon Tattoo</em> by Stieg Larsson</li>
-        <li><em>The Silent Patient</em> by Alex Michaelides</li>
-        <li><em>Big Little Lies</em> by Liane Moriarty</li>
+        <li><a href= "book details GoneGirl.html"><em>Gone Girl</em> by Gillian Flynn</a></li>
+        <li><a href= "book details DragonTatto.html"><em>The Girl with the Dragon Tattoo</em> by Stieg Larsson</a></li>
+        <li><a href= "book details TheSilentPatient.html"><em>The Silent Patient</em> by Alex Michaelides</a></li>
+        <li><a href= "book details BigLittleLies.html"><em>Big Little Lies</em> by Liane Moriarty</a></li>
         <li><em>The Woman in the Window</em> by A.J. Finn</li>
-        <li><em>The Housemaid's Secret</em> by Freida McFadden</li>
-        <li><em>The Disappearing Act</em> by Catherine Steadman</li>
-        <li><em>American Spy</em> by Lauren Wilkinson</li>
+        <li><em>The Housemaid's Secret</em> by Freida McFadden</a></li>
+        <li><em>The Disappearing Act</em> by Catherine Steadman</a></li>
+        <li><em>American Spy</em> by Lauren Wilkinson</a></li>
         <li><em>The Couple Next Door</em> by Shari Lapena</li>
         <li><em>Seven Years of Darkness</em> by You-jeong Jeong</li>
         <li><em>The Broken Girls</em> by Simone St. James</li>
@@ -154,13 +73,16 @@ ul li em {
         <li><em>Before I Go to Sleep</em> by S.J. Watson</li>
         <li><em>The Girl on the Train</em> by Paula Hawkins</li>
     </ul>
+</section>
+
+<section class="ya">
 
     <h2>Young Adult (YA)</h2>
     <ul>
-        <li><em>The Hunger Games</em> by Suzanne Collins</li>
-        <li><em>The Fault in Our Stars</em> by John Green</li>
-        <li><em>Divergent</em> by Veronica Roth</li>
-        <li><em>Six of Crows</em> by Leigh Bardugo</li>
+        <li><a href= "book details TheHungerGames.html"><em>The Hunger Games</em> by Suzanne Collins</a></li>
+        <li><a href= "book details TheFaultInOurStars.html"><em>The Fault in Our Stars</em> by John Green</a></li>
+        <li><a href= "book details Divergent.html"><em>Divergent</em> by Veronica Roth</a></li>
+        <li><a href= "book details SixOfCrows.html"><em>Six of Crows</em> by Leigh Bardugo</a></li>
         <li><em>The Hate U Give</em> by Angie Thomas</li>
         <li><em>The Lightning Thief</em> by Rick Riordan</li>
         <li><em>Twilight</em> by Stephenie Meyer</li>
@@ -173,12 +95,15 @@ ul li em {
         <li><em>Simon vs. the Homo Sapiens Agenda</em> by Becky Albertalli</li>
         <li><em>To All the Boys I've Loved Before</em> by Jenny Han</li>
     </ul>
+</section>
+
+<section class="classics">
 
     <h2>Classics and War</h2>
     <ul>
-        <li><em>All Quiet on the Western Front</em> by Erich Maria Remarque</li>
-        <li><em>War and Peace</em> by Leo Tolstoy</li>
-        <li><em>Catch-22</em> by Joseph Heller</li>
+        <li><a href= "book details AllQuietOnTheWesternFront.html"><em>All Quiet on the Western Front</em> by Erich Maria Remarque</a></li>
+        <li><a href= "book details WarAndPeace.html"><em>War and Peace</em> by Leo Tolstoy</a></li>
+        <li><a href= "book details Catch22.html"><em>Catch-22</em> by Joseph Heller</a></li>
         <li><em>The Things They Carried</em> by Tim O'Brien</li>
         <li><em>A Farewell to Arms</em> by Ernest Hemingway</li>
         <li><em>Jane Eyre</em> by Charlotte Brontë</li>
@@ -192,5 +117,7 @@ ul li em {
         <li><em>1984</em> by George Orwell</li>
         <li><em>To Kill a Mockingbird</em> by Harper Lee</li>
     </ul>
+</section>
+
 </body>
 </html>
