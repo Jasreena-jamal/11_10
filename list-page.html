@@ -4,67 +4,94 @@
     <meta charset="UTF-8">
     <title>Book List by Genre</title>
     <style>
-        /* Basic styling for body and heading */
+        /* General Body Styling */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdfdfd;
+            color: #444;
             margin: 0;
             padding: 20px;
         }
 
         h1 {
-            font-size: 2em;
-            color: #333;
+            font-size: 2.5em;
             text-align: center;
-            margin-bottom: 1em;
+            color: #222;
+            margin-bottom: 1.5em;
         }
 
+        /* Genre Heading Styles */
         h2 {
-            color: #5a5a5a;
-            margin-top: 1.5em;
-            font-size: 1.5em;
+            font-size: 2em;
+            padding: 10px 15px;
+            border-left: 6px solid #444;
+            margin-top: 2em;
+            text-transform: uppercase;
         }
 
-        /* Style for each book list */
+        /* Style for each genre section with unique themes */
+        .fiction h2 {
+            background-color: #fbe9e7;
+            color: #d84315;
+        }
+
+        .fantasy h2 {
+            background-color: #e3f2fd;
+            color: #1e88e5;
+        }
+
+        .mystery h2 {
+            background-color: #ede7f6;
+            color: #5e35b1;
+        }
+
+        .ya h2 {
+            background-color: #f3e5f5;
+            color: #8e24aa;
+        }
+
+        .classics h2 {
+            background-color: #f1f8e9;
+            color: #33691e;
+        }
+
+        /* Book list styling */
         ul {
             list-style: none;
             padding: 0;
-            margin: 0;
         }
 
         ul li {
             background-color: #fff;
             padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-            transition: background-color 0.3s;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         ul li:hover {
-            background-color: #eaeaea;
+            transform: scale(1.02);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
         }
 
-        /* Link styling for book titles */
+        /* Link Styling */
         ul li a {
-            color: #333;
             text-decoration: none;
-            font-size: 1.1em;
             font-weight: bold;
+            font-size: 1.1em;
+            color: #444;
         }
 
         ul li a:hover {
-            text-decoration: underline;
+            color: #000;
         }
 
-        /* Style for author names */
+        /* Author name styling */
         ul li em {
             font-weight: normal;
             font-style: italic;
-            color: #555;
+            color: #666;
         }
     </style>
 </head>
