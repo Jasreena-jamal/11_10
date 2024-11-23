@@ -164,7 +164,11 @@ footer {
 .contact, .feedback {
     flex: 1;
 }
-
+.contact {
+        margin-top: 5px;
+        margin-left: 20px;
+}
+    
 .feedback-box {
     width: 400px;
     height: 100px;
