@@ -57,6 +57,10 @@ header {
     margin-right: 100px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .book-lists, .top10, .quotes-container {
     width: 80%;
     height: 300px;
