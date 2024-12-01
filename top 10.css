@@ -1,96 +1,118 @@
 body{
-  background-color: rgb(216, 208, 199);
+  background-color: rgb(215, 198, 178);
 }
+
 .main_container{
   display: grid;
-  grid-template-rows:  1fr 1fr 1fr;
+  /* 4 rows 5 columns: ; */
+  grid-template-rows:  1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
   grid-template-areas:
-    "header1 header1 header1 header1 header1"
-    /* "header2 header2 header2 header2 header2" */
-    "genre1 genre2 genre3 genre4 genre5";
-  gap: 0px 30px;
+    /* 1st row for header spanning 5 col */
+    "header1 header1 header1 header1 header1" 
+    /* 2nd row for each genre div with equal space */
+    "genre1 genre2 genre3 genre4 genre5"
+    /* 3rd row for centred random popular book button, . means empty,  */
+    ". . surprise_me_container . ."
+    /* 4th row for displaying name of random book */
+    "random_popular_book random_popular_book random_popular_book random_popular_book random_popular_book";
+    
+    /* gap in row and col of each item in grid */
+    gap: 60px 30px;
+
 
 }
+
 .header1 {
   grid-area: header1;
   text-align: center;
   font-size: 2em;
-/*   padding-top: 30px; */
   font-weight: bolder;
-  
 }
 
 .genre1 {
   grid-area: genre1;
   background-image: url("genre background/genre1.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+ }
 
 .genre2 {
   grid-area: genre2;
   background-image: url("genre background/genre2.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+ }
 
 .genre3 {
   grid-area: genre3;
   background-image: url("genre background/genre3.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .genre4 {
   grid-area: genre4;
   background-image: url("genre background/genre4.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  }
 
 .genre5 {
   grid-area: genre5;
   background-image: url("genre background/genre5.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-}
+ }
 
+.surprise_me_container{
+  grid-area: surprise_me_container;
+  margin-left: 50px;
+}
 
 .genre1, .genre2, .genre3 ,.genre4 ,.genre4 ,.genre5{
   background-color: antiquewhite;
   text-align: center;
   text-decoration: none;
- /* padding-top: 80px;*/
-  /*padding-bottom: 80px;*/
   transition-duration: 0.2s;  
   border-radius: 50px;
-
   max-width: 300px;                   
   max-height: 200px;                 
   width: 100%;                        
   height: 100%;
-
-
+  /* This property makes the background image cover the entire element,  */
+  background-size:cover;
 }
-.genre1:hover,.genre2:hover,.genre3:hover,.genre4:hover,.genre5:hover {
+
+/* reduce opacity of background and add box shadow */
+.genre1:hover,.genre2:hover,.genre3:hover,.genre4:hover,.genre5:hover,.surprise_me_container button:hover{
   opacity: 0.7; 
+  /* horizontal offset,vertical offset,blur,color */
+  /* offset-->The shadow is shifted px to the direction. */
   box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
   
 }
+
+/* format the text in genre divs */
 a {
-  color:white;
+  color:rgb(255, 255, 255);
+  font-weight:bolder;
+  font-style: italic;
+  text-decoration: none;
+  font-size:25pt;
+  text-decoration-line: overline;
+  text-align: center;
+
+}
+
+a p{
+  padding-top: 70px;
+}
+
+.surprise_me_container button{
+  background-color: rgb(161, 129, 90);
+  color:rgb(84, 34, 34);
   font-weight:bolder;
   font-style: italic;
   text-decoration: none;
   font-size:20pt;
-  text-decoration-line: overline;
-
 }
-a p{
-  padding-top: 70px;
+
+.surprise_me_container div{
+  margin-right: 50px;
+  color: rgb(84, 34, 34);
+  font-size:20pt;
+  text-align: center;
+  
 }
