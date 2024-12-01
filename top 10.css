@@ -5,7 +5,7 @@ body{
 .main_container{
   display: grid;
   /* 4 rows 5 columns: ; */
-  grid-template-rows:  1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
   grid-template-areas:
@@ -13,14 +13,15 @@ body{
     "header1 header1 header1 header1 header1" 
     /* 2nd row for each genre div with equal space */
     "genre1 genre2 genre3 genre4 genre5"
+    ". . . . ."
     /* 3rd row for centred random popular book button, . means empty,  */
     ". . surprise_me_container . ."
     /* 4th row for displaying name of random book */
     "random_popular_book random_popular_book random_popular_book random_popular_book random_popular_book";
     
     /* gap in row and col of each item in grid */
-    gap: 30px 30px;
-
+/*     gap: 30px 30px;
+ */
 
 }
 
