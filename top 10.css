@@ -14,14 +14,14 @@ body{
     /* 2nd row for each genre div with equal space */
     "genre1 genre2 genre3 genre4 genre5"
     /* 3rd row for centred random popular book button, . means empty,  */
-    ". . surprise_me_container . ."
+    "surprise_me_container surprise_me_container surprise_me_container surprise_me_container surprise_me_container"
     /* 4th row for displaying name of random book */
     "random_popular_book random_popular_book random_popular_book random_popular_book random_popular_book";
     
     /* gap in row and col of each item in grid */
-    gap: 50px 30px;
+    gap: 20px 50px;
     /* row-gap: 10px;  /* Reduced vertical gap between rows */
-    /* column-gap: 10px;  Horizontal gap remains 30px */ */
+    /* column-gap: 10px;  Horizontal gap remains 30px */ 
 
 }
 
@@ -30,6 +30,8 @@ body{
   text-align: center;
   font-size: 1.5em;
   font-weight: bolder;
+  /* background-color: aliceblue; */
+  /* margin-top: 100px; */
 }
 
 .genre1 {
@@ -57,10 +59,7 @@ body{
   background-image: url("genre background/genre5.jpg");
  }
 
-.surprise_me_container{
-  grid-area: surprise_me_container;
-  margin-left: 50px;
-}
+
 
 .genre1, .genre2, .genre3 ,.genre4 ,.genre4 ,.genre5{
   background-color: antiquewhite;
@@ -68,12 +67,13 @@ body{
   text-decoration: none;
   transition-duration: 0.2s;  
   border-radius: 50px;
-  max-width: 300px;                   
-  max-height: 200px;                 
+  /* max-width: 300px;                   
+  max-height: 200px; */                
   width: 100%;                        
-  height: 100%;
+  height: 100%; 
   /* This property makes the background image cover the entire element,  */
   background-size:cover;
+  
 }
 
 /* reduce opacity of background and add box shadow */
@@ -91,29 +91,46 @@ a {
   font-weight:bolder;
   font-style: italic;
   text-decoration: none;
-  font-size:25pt;
+  font-size:20pt;
   text-decoration-line: overline;
   text-align: center;
 
 }
 
 a p{
-  padding-top: 70px;
+
+  /* align-content: center; */
+  padding-top: 50px;
 }
 
-.surprise_me_container button{
+
+.surprise_me_container{
+  grid-area: surprise_me_container;
+  /* margin-left: 50px; */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  /* button and the #random_popular_book div will stack on top of each other. */
+  flex-direction: column;
+  /* background-color: aliceblue; */
+}
+
+#surprise_me_button{
   background-color: rgb(161, 129, 90);
   color:rgb(84, 34, 34);
   font-weight:bolder;
   font-style: italic;
   text-decoration: none;
-  font-size:20pt;
-}
-
-.surprise_me_container div{
-  margin-right: 50px;
-  color: rgb(84, 34, 34);
-  font-size:20pt;
-  text-align: center;
+  font-size:15pt;
   
 }
+
+#random_popular_book{
+  /* margin-right: 50px; */
+  color: rgb(84, 34, 34);
+  font-size:15pt;
+  text-align:center;
+}
+
+
+
