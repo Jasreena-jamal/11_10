@@ -20,8 +20,6 @@ body{
     
     /* gap in row and col of each item in grid */
     gap: 20px 50px;
-    /* row-gap: 10px;  /* Reduced vertical gap between rows */
-    /* column-gap: 10px;  Horizontal gap remains 30px */ 
 
 }
 
@@ -30,8 +28,7 @@ body{
   text-align: center;
   font-size: 1.5em;
   font-weight: bolder;
-  /* background-color: aliceblue; */
-  /* margin-top: 100px; */
+
 }
 
 .genre1 {
@@ -66,9 +63,7 @@ body{
   text-align: center;
   text-decoration: none;
   transition-duration: 0.2s;  
-  border-radius: 50px;
-  /* max-width: 300px;                   
-  max-height: 200px; */                
+  border-radius: 50px;                
   width: 100%;                        
   height: 100%; 
   /* This property makes the background image cover the entire element,  */
@@ -98,21 +93,17 @@ a {
 }
 
 a p{
-
-  /* align-content: center; */
   padding-top: 50px;
 }
 
 
 .surprise_me_container{
   grid-area: surprise_me_container;
-  /* margin-left: 50px; */
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
   /* button and the #random_popular_book div will stack on top of each other. */
   flex-direction: column;
-  /* background-color: aliceblue; */
 }
 
 #surprise_me_button{
@@ -126,7 +117,6 @@ a p{
 }
 
 #random_popular_book{
-  /* margin-right: 50px; */
   color: rgb(84, 34, 34);
   font-size:15pt;
   text-align:center;
