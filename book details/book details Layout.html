@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .book-cover {
+            width: 150px;
+            height: 200px;
+            background-color: #eee;
+            margin-right: 20px;
+        }
+        .details {
+            flex: 1;
+        }
+        .book-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .book-author {
+            font-size: 18px;
+            color: #555;
+            margin: 5px 0 15px 0;
+        }
+        .rating {
+            margin: 10px 0;
+        }
+        .rating span {
+            font-size: 20px;
+            color: gold;
+        }
+        .description {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #333;
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        .info span {
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+        <!-- Book Cover Placeholder -->
+		<img class="book-cover" src="Book cover.jpg" alt="book cover">
+
+    <div class="details">
+        <h1 class="book-title">Book Name</h1>
+        <p class="book-author">by Author Name</p>
+
+        <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+            <small>4</small>
+        </div>
+
+        <div class="description">
+            <p>This is a brief description of the book. It provides an overview or summary to give readers an idea of what the book is about.</p>
+        </div>
+
+        <div class="info">
+            <span><strong>Release Date:</strong> Month day, year</span>
+            <span><strong>Length:</strong> number of pages</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

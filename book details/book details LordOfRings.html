@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+		nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 2px solid #ccc;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            <!--margin: 20px auto;-->
+            border: 1px solid white; 
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .book-cover {
+            width: 225px;
+            height: 300px;
+            background-color: #eee;
+            margin-right: 20px;
+        }
+        .details {
+            flex: 1;
+        }
+        .book-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .book-author {
+            font-size: 18px;
+            color: #555;
+            margin: 5px 0 15px 0;
+        }
+        .rating {
+            margin: 10px 0;
+        }
+        .rating span {
+            font-size: 20px;
+            color: gold;
+        }
+        .description {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #333;
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        .info span {
+            display: block;
+            margin-top: 5px;
+        }
+		.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Drop-down menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 10px 0;
+            z-index: 1;
+            border: 1px solid #ddd;
+        }
+
+        /* Drop-down links */
+        .dropdown-content a {
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+            font-size: 15px;
+        }
+        .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Show the drop-down menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+	<div class="dropdown">
+		<a href="#">Browse ▼</a>
+		<div class="dropdown-content">
+		<div style="text-align:center; font-weight: bold; color: #333;">GENRES</a> </div>
+		<a href="#">Fantasy</a>
+        <a href="#">Fiction</a>
+        <a href="#">Mystery/Thriller</a>
+        <a href="#">Young Adult</a>
+        <a href="#">Classic and War</a>
+		</div>
+		</div>
+</nav>
+
+ <div class="container">
+
+        <!-- Book Cover Placeholder -->
+		<img class="book-cover" src="Book-covers/LordOfRings cover.jpg" alt="book cover">
+
+    <div class="details">
+        <h1 class="book-title">The Lord of the Rings</h1>
+        <p class="book-author">by J.R.R. Tolkien</p>
+
+        <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+            <small>4.53</small>
+        </div>
+
+        <div class="description">
+            <p>The Lord of the Rings by J.R.R. Tolkien is an epic fantasy tale set in the richly imagined world of Middle-earth. The story follows Frodo Baggins, a humble hobbit who inherits a powerful and dangerous artifact known as the One Ring. Crafted by the Dark Lord Sauron to control all other rings of power, the One Ring holds immense evil and must be destroyed to prevent Sauron from conquering Middle-earth.</p>
+			<p>Frodo embarks on a perilous journey to the distant land of Mordor, the only place where the Ring can be destroyed. He is joined by a diverse fellowship of allies—including Gandalf the wizard, Aragorn the ranger, Legolas the elf, Gimli the dwarf, and his loyal hobbit friends Sam, Merry, and Pippin. Together, they face treacherous landscapes, battles with dark forces, and the seductive power of the Ring itself. </p>
+			<p>As the journey unfolds, themes of friendship, courage, and sacrifice shine through, highlighting the struggle between good and evil. The Lord of the Rings is a monumental work of imagination, celebrated for its intricate world-building, unforgettable characters, and profound exploration of heroism and hope. </P>
+		</div>
+
+        <div class="info">
+            <span><strong>Release Date:</strong> January 1, 1954</span>
+            <span><strong>Length:</strong> 1216 pages</span>
+        </div>
+    </div>
+
+
+</body>
+</html>
