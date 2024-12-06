@@ -2,146 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inspiring Quotes</title>
     <link rel="stylesheet" type="text/css" href="quotes.css">
 </head>
 <body>
-    <h1>Inspiring Quotes</h1>
+    <header>
+        <div class="logo">
+            <h1>BookVerse</h1>
+            <p>For book lovers to discover their next read!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="list-page.html">Books</a></li>
+                <li><a href="top-10.html">Top 10</a></li>
+                <li><a href="quotes-page.html">Quotes</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <section>
+
+        <!-- Quotes Container -->
+        <div id="quotes">
+            <!-- Quotes will be dynamically added by JavaScript -->
+        </div>
+        
+        <!-- Explore Quotes by Genre Section -->
+        <div class="explore-genre">
             <h2>Explore Quotes by Genre</h2>
             <nav>
                 <ul>
-                    <li><a href="#fiction">Fiction</a></li>
-                    <li><a href="#fantasy">Fantasy</a></li>
-                    <li><a href="#mystery">Mystery/Thriller</a></li>
-                    <li><a href="#ya">Young Adult (YA)</a></li>
-                    <li><a href="#classics">Classics and War</a></li>
+                    <li><button onclick="filterQuotes('fiction')">Fiction</button></li>
+                    <li><button onclick="filterQuotes('fantasy')">Fantasy</button></li>
+                    <li><button onclick="filterQuotes('mystery')">Mystery/Thriller</button></li>
+                    <li><button onclick="filterQuotes('ya')">Young Adult (YA)</button></li>
+                    <li><button onclick="filterQuotes('classics')">Classics and War</button></li>
                 </ul>
             </nav>
-    
-        <main>
-    
-            <!-- Fiction Quotes Section -->
-        <section id="fiction">
-            <h2>Fiction</h2>
-            <p><strong>The Goldfinch</strong><br>
-            "Caring too much for objects can destroy you. Only—if you care for a thing enough, it takes on a life of its own, doesn’t it?"<br>
-            — Donna Tartt</p>
+        </div>
 
-            <p><strong>The Kite Runner</strong><br>
-            "For you, a thousand times over."<br>
-            — Khaled Hosseini</p>
-
-            <p><strong>The Night Circus</strong><br>
-            "The circus arrives without warning. No announcements precede it. It is simply there, when yesterday it was not."<br>
-            — Erin Morgenstern</p>
-
-            <p><strong>Normal People</strong><br>
-            "It was culture as class performance, literature fetishized for its ability to take educated people on false emotional journeys, so that they might learn the correct social attitudes to adopt in public."<br>
-            — Sally Rooney</p>
-
-            <p><strong>Where the Crawdads Sing</strong><br>
-            “I wasn't aware that words could hold so much. I didn't know a sentence could be so full.”<br>
-            — Delia Owens</p>
-        </section>
-
-        <!-- Fantasy Quotes Section -->
-        <section id="fantasy">
-            <h2>Fantasy</h2>
-            <p><strong>The Name of the Wind</strong><br>
-            "Words are pale shadows of forgotten names. As names have power, words have power. Words can light fires in the minds of men. Words can wring tears from the hardest hearts."<br>
-            — Patrick Rothfuss</p>
-
-            <p><strong>A Song of Ice and Fire series</strong><br>
-            "When you play the game of thrones, you win or you die. There is no middle ground."<br>
-            — George R.R. Martin</p>
-
-            <p><strong>Mistborn: The Final Empire</strong><br>
-            "There’s always another secret."<br>
-            — Brandon Sanderson</p>
-
-            <p><strong>The Priory of the Orange Tree</strong><br>
-            "We may be small, and we may be young, but we will shake the world for our beliefs."<br>
-            — Samantha Shannon</p>
-
-            <p><strong>The Hobbit</strong><br>
-            "There is more in you of good than you know, child of the kindly West. Some courage and some wisdom, blended in measure."<br>
-            — J.R.R. Tolkien</p>
-        </section>
-
-        <!-- Mystery/Thriller Quotes Section -->
-        <section id="mystery">
-            <h2>Mystery/Thriller</h2>
-            <p><strong>Gone Girl</strong><br>
-            "There’s a difference between really loving someone and loving the idea of her."<br>
-            — Gillian Flynn</p>
-
-            <p><strong>The Girl with the Dragon Tattoo</strong><br>
-            "What she had realized was that love was that moment when your heart was about to burst."<br>
-            — Stieg Larsson</p>
-
-            <p><strong>The Silent Patient</strong><br>
-            "We are all crazy, I believe, just in different ways."<br>
-            — Alex Michaelides</p>
-
-            <p><strong>Big Little Lies</strong><br>
-            "All conflict can be traced back to someone’s feelings getting hurt, don’t you think?"<br>
-            — Liane Moriarty</p>
-
-            <p><strong>The Woman in the Window</strong><br>
-            "If there's one thing I know, it's that the deranged are unpredictable."<br>
-            — A.J. Finn</p>
-        </section>
-
-        <!-- Young Adult (YA) Quotes Section -->
-        <section id="ya">
-            <h2>Young Adult (YA)</h2>
-            <p><strong>The Hunger Games</strong><br>
-            "May the odds be ever in your favor."<br>
-            — Suzanne Collins</p>
-
-            <p><strong>The Fault in Our Stars</strong><br>
-            "Some infinities are bigger than other infinities."<br>
-            — John Green</p>
-
-            <p><strong>Divergent</strong><br>
-            "Becoming fearless isn't the point. That's impossible. It's learning how to control your fear, and how to be free from it."<br>
-            — Veronica Roth</p>
-
-            <p><strong>Six of Crows</strong><br>
-            "The heart is an arrow. It demands aim to land true."<br>
-            — Leigh Bardugo</p>
-
-            <p><strong>The Hate U Give</strong><br>
-            "What’s the point of having a voice if you’re gonna be silent in those moments you shouldn’t be?"<br>
-            — Angie Thomas</p>
-        </section>
-
-        <!-- Classics and War Quotes Section -->
-        <section id="classics">
-            <h2>Classics and War</h2>
-            <p><strong>All Quiet on the Western Front</strong><br>
-            "He fell in October 1918, on a day that was so quiet and still on the whole front, that the army report confined itself to the single sentence: All quiet on the Western Front."<br>
-            — Erich Maria Remarque</p>
-
-            <p><strong>War and Peace</strong><br>
-            "We can know only that we know nothing. And that is the highest degree of human wisdom."<br>
-            — Leo Tolstoy</p>
-
-            <p><strong>Catch-22</strong><br>
-            "He was going to live forever, or die in the attempt."<br>
-            — Joseph Heller</p>
-
-            <p><strong>The Things They Carried</strong><br>
-            "They carried the sky. The whole atmosphere, they carried it, the humidity, the monsoons, the stink of fungus and decay, all of it, they carried gravity."<br>
-            — Tim O'Brien</p>
-
-            <p><strong>A Farewell to Arms</strong><br>
-            "The world breaks everyone, and afterward, some are strong at the broken places."<br>
-            — Ernest Hemingway</p>
-        </section>
     </main>
-    
+
+    <footer>
+        <div class="contact">
+            <p><strong> Book Enquiry</strong></p>
+            <p>Contact us here:</p>
+            <div class="email">
+                <p>bookverse@gmail.com</p>
+            </div>
+            <div class="phone-number">
+                <p>+971-23-4567890</p>
+            </div>
+        </div>
+
+        <div class="feedback">
+            <p class="feed-p">Feedback:</p>
+            <textarea class="feedback-box" placeholder="give us your feedback"></textarea>
+            <button class="submit-button">Submit</button>
+        </div>
+    </footer>
+
+
+    <script src="Quotes.js"></script>
 </body>
 </html>
