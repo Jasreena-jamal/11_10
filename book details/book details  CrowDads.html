@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+		nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 2px solid #ccc;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            <!--margin: 20px auto;-->
+            border: 1px solid white; 
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .book-cover {
+            width: 225px;
+            height: 300px;
+            background-color: #eee;
+            margin-right: 20px;
+        }
+        .details {
+            flex: 1;
+        }
+        .book-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .book-author {
+            font-size: 18px;
+            color: #555;
+            margin: 5px 0 15px 0;
+        }
+        .rating {
+            margin: 10px 0;
+        }
+        .rating span {
+            font-size: 20px;
+            color: gold;
+        }
+        .description {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #333;
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        .info span {
+            display: block;
+            margin-top: 5px;
+        }
+		.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Drop-down menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 10px 0;
+            z-index: 1;
+            border: 1px solid #ddd;
+        }
+
+        /* Drop-down links */
+        .dropdown-content a {
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+            font-size: 15px;
+        }
+        .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Show the drop-down menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+	<div class="dropdown">
+		<a href="#">Browse ▼</a>
+		<div class="dropdown-content">
+		<div style="text-align:center; font-weight: bold; color: #333;">GENRES</a> </div>
+		<a href="#">Fantasy</a>
+        <a href="#">Fiction</a>
+        <a href="#">Mystery/Thriller</a>
+        <a href="#">Young Adult</a>
+        <a href="#">Classic and War</a>
+		</div>
+		</div>
+</nav>
+
+ <div class="container">
+
+        <!-- Book Cover Placeholder -->
+		<img class="book-cover" src="Book-covers/CrawDads cover.jpg" alt="book cover">
+
+    <div class="details">
+        <h1 class="book-title">Where the Crawdads Sing</h1>
+        <p class="book-author">by Delia Owens</p>
+
+        <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+            <small>4.38</small>
+        </div>
+
+        <div class="description">
+            <p>Where the Crawdads Sing by Delia Owens is a captivating coming-of-age story set against the backdrop of the North Carolina marshes. The novel follows Kya Clark, known as the "Marsh Girl," who grows up isolated from society after being abandoned by her family. As a child, Kya learns to survive in the wild, developing a deep connection with nature and the creatures around her. </p>
+			<p>Despite her solitude, Kya finds solace in her love for the marsh and its wildlife, as well as in her budding relationships with two local boys, Tate and Chase. However, her world is shattered when Chase is found dead, and Kya becomes the prime suspect in his murder. As the story unfolds, it weaves together themes of loneliness, resilience, and the search for belonging, while also exploring issues of prejudice and the impact of social ostracism. </p>
+			<p>Through lyrical prose and vivid descriptions, Owens brings the marsh to life and highlights Kya's journey from abandonment to self-discovery. Where the Crawdads Sing is a powerful tale of survival, love, and the complexities of human connection, ultimately revealing the beauty and brutality of both nature and society. </p>
+        </div>
+
+        <div class="info">
+            <span><strong>Release Date:</strong> August 14, 2018</span>
+            <span><strong>Length:</strong> 384 pages</span>
+        </div>
+    </div>
+<!--</div>-->
+
+</body>
+</html>
