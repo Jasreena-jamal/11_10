@@ -1,11 +1,8 @@
-
 body {
     font-family: Arial, sans-serif;
 	margin: 0; 
     padding: 0; 
-       min-height: 100vh; 
-       overflow-y: auto;
-       padding-bottom: 80px;
+	min-height: 100vh; 
 
 }
 
@@ -60,7 +57,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Main Content Styling */
+
 .container {
     display: flex;
     max-width: 1000px;
@@ -123,7 +120,7 @@ nav ul li a:hover {
 
 footer {
     background-color: #f5e6d4; 
-    padding: 5px 20px; /* Reduce padding for more compact footer */
+    padding: 5px 20px; 
     color: #000;
     display: flex;
     justify-content: space-between;
@@ -132,7 +129,7 @@ footer {
     left: 0;
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    height: 80px; /* Reduce footer height */
+    height: 80px; 
 }
 
 .contact, .feedback {
@@ -140,32 +137,35 @@ footer {
 
 }
 
-/* Contact Section */
+
 .contact  {
-		margin-top: 5px;
-        margin-left: 20px;
+	margin-top: 5px;
+    margin-left: 20px;
 }
 
 .contact p {
-    font-size: 14px; /* Smaller font size */
-    margin: 0; /* No margin */
+    font-size: 14px; 
+    margin: 0; 
 }
 
 .feed-p {
     font-size: 12px;
-    margin-bottom: 1px; /* Lower feedback text */
-    padding-top: 0px; /* Adjust padding to lower it slightly */
+	margin-bottom: 5px; 
+	padding-top: 0px; 
+    margin-top: 0; 
+
 }
 
 .feedback-box {
+	display: block;
     width: 230px; 
-    height: 10px; 
+    height: 30px; 
     resize: none;
-    /*overflow: auto;*/
+    overflow: auto;
     color: gray;
     border: 1px solid burlywood;
     border-radius: 10px;
-    padding: 5px;
+    padding: 3px;
     font-size: 12px; 
     margin-top: 2px;
 }
@@ -173,10 +173,10 @@ footer {
 .submit-button {
 	display: block;
     background-color: rgb(224, 194, 155);
-    width: 70px; /* Reduced button width */
-    height: 20px; /* Reduced button height */
+    width: 70px; 
+    height: 20px; 
     border-radius: 5px;
     border: 1px solid burlywood;
-    margin-top: 5px; /* Lifted slightly */
+    margin-top: 5px; 
     font-size: 12px;
 }
