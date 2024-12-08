@@ -119,17 +119,15 @@ nav ul li a:hover {
 
 
 footer {
-    background-color: #f5e6d4; 
+     background-color: #f5e6d4; 
     padding: 5px 20px; 
     color: #000;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    width: 100%; /* Full width */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    height: 80px; 
+    height: 80px;
+    margin-top: auto; 
 }
 
 .contact, .feedback {
