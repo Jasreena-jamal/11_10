@@ -1,14 +1,13 @@
-/* General Styling */
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0; /* Remove default body margins */
-    padding: 0; /* Remove default body padding */
-    display: flex;
-    flex-direction: column; /* Ensures the header, container, and footer stack */
-    min-height: 100vh; /* Makes the body cover the full viewport height */
+	margin: 0; 
+    padding: 0; 
+	min-height: 100vh; 
+
 }
 
-/* Header Styling */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -16,11 +15,11 @@ header {
     background-color: #a67c52;
     padding: 15px 30px;
     color: #fff;
-    width: 100%; /* Ensures it spans the full width */
+    width: 100%; 
     box-sizing: border-box;
 }
 
-/* Logo Area */
+
 .logo h1 {
     margin: 0;
     font-size: 30px;
@@ -32,7 +31,7 @@ header {
     font-size: 14px;
 }
 
-/* Navigation Menu */
+
 nav ul {
     list-style: none;
     display: flex;
@@ -40,19 +39,23 @@ nav ul {
     margin: 0;
     padding: 0;
 }
+nav ul li {
+    display: inline;
+}
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
-    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
     padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #fff;
-    color: #a67c52;
+    color: #000;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
 
 /* Main Content Styling */
@@ -62,10 +65,9 @@ nav ul li a:hover {
     border: 1px solid white;
     padding: 20px;
     border-radius: 10px;
-    flex: 1; /* Makes the container expand if there's extra space */
+    flex: 1; 
 }
 
-/* Book Cover Placeholder */
 .book-cover {
     width: 225px;
     height: 300px;
@@ -116,65 +118,58 @@ nav ul li a:hover {
     margin-top: 5px;
 }
 
-/* Footer Styling */
+
 footer {
-    background-color: #f5e6d4; /* Light brown */
-    padding: 5px 20px; /* Reduced padding for more compact footer */
+    background-color: #f5e6d4; 
+    padding: 5px 20px; /* Reduce padding for more compact footer */
     color: #000;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    height: 80px; /* Reduced footer height */
+    height: 80px; /* Reduce footer height */
 }
 
 .contact, .feedback {
-    flex: 1; /* Equal space for both sections */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px; /* Small gap between elements */
+    flex: 1; 
+
 }
 
 /* Contact Section */
-.contact p {
-    font-size: 12px; /* Smaller font size */
-    margin: 0; /* No margin */
+.contact  {
+		margin-top: 5px;
+        margin-left: 20px;
 }
 
-/* Feedback Section */
-.feedback {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Lift feedback box and button */
-    gap: 5px; /* Small gap between elements */
-    margin-top: 5px; /* Adjust top margin for better alignment */
+.contact p {
+    font-size: 14px; /* Smaller font size */
+    margin: 0; /* No margin */
 }
 
 .feed-p {
     font-size: 12px;
-    margin-bottom: 0; /* Lower feedback text */
-    padding-top: 5px; /* Adjust padding to lower it slightly */
+    margin-bottom: 1px; /* Lower feedback text */
+    padding-top: 0px; /* Adjust padding to lower it slightly */
 }
 
 .feedback-box {
-    width: 230px; /* Slightly reduced width */
-    height: 25px; /* Reduced height for the text area */
+    width: 230px; 
+    height: 10px; 
     resize: none;
     overflow: auto;
     color: gray;
     border: 1px solid burlywood;
     border-radius: 10px;
     padding: 5px;
-    font-size: 12px; /* Smaller text inside the box */
-    margin-top: 2px; /* Lifted slightly */
+    font-size: 12px; 
+    margin-top: 2px;
 }
 
 .submit-button {
+	display: block;
     background-color: rgb(224, 194, 155);
     width: 70px; /* Reduced button width */
     height: 20px; /* Reduced button height */
@@ -182,5 +177,4 @@ footer {
     border: 1px solid burlywood;
     margin-top: 5px; /* Lifted slightly */
     font-size: 12px;
-    align-self: flex-start; /* Align button to the left */
 }
