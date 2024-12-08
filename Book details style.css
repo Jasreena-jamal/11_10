@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column; /* Ensures the header, container, and footer stack */
     min-height: 100vh; /* Makes the body cover the full viewport height */
+    padding-bottom: 80px;
 }
 
 /* Header Styling */
