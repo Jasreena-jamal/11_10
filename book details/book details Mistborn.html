@@ -4,133 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Details</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-		nav {
-            background-color: #f4f4f4;
-            padding: 10px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border-bottom: 2px solid #ccc;
-        }
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-size: 18px;
-            padding: 8px;
-            border-radius: 5px;
-        }
-        nav a:hover {
-            background-color: #ddd;
-        }
-        .container {
-            display: flex;
-            max-width: 1000px;
-            <!--margin: 20px auto;-->
-            border: 1px solid white; 
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .book-cover {
-            width: 225px;
-            height: 300px;
-            background-color: #eee;
-            margin-right: 20px;
-        }
-        .details {
-            flex: 1;
-        }
-        .book-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin: 0;
-        }
-        .book-author {
-            font-size: 18px;
-            color: #555;
-            margin: 5px 0 15px 0;
-        }
-        .rating {
-            margin: 10px 0;
-        }
-        .rating span {
-            font-size: 20px;
-            color: gold;
-        }
-        .description {
-            margin-top: 15px;
-            font-size: 16px;
-            color: #333;
-        }
-        .info {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #555;
-        }
-        .info span {
-            display: block;
-            margin-top: 5px;
-        }
-		.dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        /* Drop-down menu */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #ffffff;
-            min-width: 200px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            padding: 10px 0;
-            z-index: 1;
-            border: 1px solid #ddd;
-        }
-
-        /* Drop-down links */
-        .dropdown-content a {
-            color: #333;
-            padding: 10px 20px;
-            text-decoration: none;
-            display: block;
-            font-size: 15px;
-        }
-        .dropdown-content a:hover {
-            background-color: #f0f0f0;
-        }
-
-        /* Show the drop-down menu on hover */
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../Book details style.css">
 </head>
 <body>
-
-<nav>
-    <a href="index.html">Home</a>
-	<div class="dropdown">
-		<a href="#">Browse ▼</a>
-		<div class="dropdown-content">
-		<div style="text-align:center; font-weight: bold; color: #333;">GENRES</a> </div>
-		<a href="#">Fantasy</a>
-        <a href="#">Fiction</a>
-        <a href="#">Mystery/Thriller</a>
-        <a href="#">Young Adult</a>
-        <a href="#">Classic and War</a>
-		</div>
-		</div>
-</nav>
-
+    <header>  
+        <div class="logo">  
+            <h1>BookVerse</h1>  
+            <p>For book lovers to discover their next read!</p>  
+        </div>  
+        <nav>  
+            <ul>  
+                <li><a href="../index.html">Home</a></li>  
+                <li><a href="../list-page.html">Books</a></li>  
+                <li><a href="../top-10.html">Top 10</a></li>  
+                <li><a href="../quotes-page.html">Quotes</a></li>  
+            </ul>  
+        </nav>  
+    </header>
  <div class="container">
 
         <!-- Book Cover Placeholder -->
-		<img class="book-cover" src="Book-covers/Mistborn cover.jpg" alt="book cover">
+		<img class="book-cover" src="../Book-covers/Mistborn cover.jpg" alt="book cover">
 
     <div class="details">
         <h1 class="book-title">Mistborn: The Final Empire</h1>
