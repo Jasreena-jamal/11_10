@@ -3,9 +3,9 @@ var quoteContainer = document.getElementById("quote");
 var quote = ["Be yourself; everyone else is already taken" ,
     "A room without books is like a body without a soul" ,
     "You only live once, but if you do it right, once is enough",
-    "Live as if you were to die tomorrow. Learn as if you were to live forever"];
+    "Books are a uniquely portable magic"];
 
-var author = [ "Oscar Wilde" , "Marcus Tullius Cicero" , "Mae West" , "Mahatma Gandhi"];
+var author = [ "Oscar Wilde" , "Marcus Tullius Cicero" , "Mae West" , "Stephen King"];
 // Function to display a random quote
 function displayRandomQuote() {
 
