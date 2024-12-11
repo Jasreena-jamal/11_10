@@ -106,7 +106,7 @@ a{
 }
 
 footer {
-    background-color: beige;
+    background-color: #a67c52;
     height: 200px;
     padding: 20px;
     width: 100%;
@@ -115,6 +115,7 @@ footer {
 
 .contact{
     display: inline-block;
+    background-color: rgb(193, 171, 143);
     width: 400px;
     padding-left: 50px;
     margin-top: 15px;
