@@ -24,7 +24,7 @@ margin-top: 2em;
 text-transform: uppercase;
 }
 
-/* Style for each genre section with unique brown and earthy tones */
+/* Style for each genre section with brown */
 .fiction h2,
 .fantasy h2,
 .mystery h2,
@@ -41,7 +41,7 @@ padding: 0;
 }
 
 ul li {
-background-color: #fff; /* White for contrast */
+background-color: #fff; 
 padding: 15px;
 margin: 10px 0;
 border-radius: 10px;
@@ -59,16 +59,34 @@ ul li a {
 text-decoration: none;
 font-weight: bold;
 font-size: 1.1em;
-color: #5a4635; /* Dark brown */
+color: #5a4635; 
 }
 
 ul li a:hover {
-color: #3e2723; /* Rich brown */
+color: #3e2723; 
 }
 
-/* Author name styling */
+
 ul li em {
 font-weight: normal;
 font-style: italic;
-color: #8d6e63; /* Coffee brown */
+color: #8d6e63; 
 }
+
+footer {
+    background-color: #a67c52;
+    height: 200px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .contact{
+    background-color: rgb(193, 171, 143);
+    display: inline-block;
+    width: 400px;
+    padding-left: 50px;
+    margin-top: 15px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.30);
+    border-radius: 10px;
+  }
