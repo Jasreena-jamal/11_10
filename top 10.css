@@ -1,4 +1,4 @@
-body{
+/* body{
   background-color: rgb(215, 198, 178);
 }
 
@@ -124,3 +124,219 @@ a p{
 
 
 
+ */
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a67c52;
+  color: #fff;
+  padding: 20px 40px;
+  height: auto;
+  font-style: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+  padding: 5px 10px;
+  font-style: normal;
+
+}
+
+nav ul li a:hover {
+  color: #000;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+
+header .logo {
+  text-align: left;
+}
+
+header h1 {
+  font-size: 33px;
+  margin: 0;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 16px; 
+  margin: 5px 0 0;
+}
+.main_container{
+  display: grid;
+  /* 4 rows 5 columns: ; */
+  grid-template-rows:  1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  grid-template-areas:
+    /* 1st row for header spanning 5 col */
+    "header1 header1 header1 header1 header1" 
+    /* 2nd row for each genre div with equal space */
+    "genre1 genre2 genre3 genre4 genre5"
+    /* 3rd row for centred random popular book button, . means empty,  */
+    "surprise_me_container surprise_me_container surprise_me_container surprise_me_container surprise_me_container"
+    /* 4th row for displaying name of random book */
+    "random_popular_book random_popular_book random_popular_book random_popular_book random_popular_book";
+    
+    /* gap in row and col of each item in grid */
+    gap: 20px 50px;
+    /* row-gap: 10px;  /* Reduced vertical gap between rows */
+    /* column-gap: 10px;  Horizontal gap remains 30px */ 
+
+}
+
+.header1 {
+  grid-area: header1;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: #a67c52;
+
+  /* margin-top: 100px; */
+}
+
+.genre1 {
+  grid-area: genre1;
+  background-image: url("genre background/genre1.jpg");
+ }
+
+.genre2 {
+  grid-area: genre2;
+  background-image: url("genre background/genre2.jpg");
+ }
+
+.genre3 {
+  grid-area: genre3;
+  background-image: url("genre background/genre3.jpg");
+}
+
+.genre4 {
+  grid-area: genre4;
+  background-image: url("genre background/genre4.jpg");
+  }
+
+.genre5 {
+  grid-area: genre5;
+  background-image: url("genre background/genre5.jpg");
+ }
+
+
+
+.genre1, .genre2, .genre3 ,.genre4 ,.genre4 ,.genre5{
+  background-color: antiquewhite;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.2s;  
+  border-radius: 50px;
+  /* max-width: 300px;                   
+  max-height: 200px; */                
+  width: 100%;                        
+  height: 100%; 
+  /* This property makes the background image cover the entire element,  */
+  background-size:cover;
+  
+}
+
+/* reduce opacity of background and add box shadow */
+.genre1:hover,.genre2:hover,.genre3:hover,.genre4:hover,.genre5:hover,.surprise_me_container button:hover{
+  opacity: 0.7; 
+  /* horizontal offset,vertical offset,blur,color */
+  /* offset-->The shadow is shifted px to the direction. */
+  box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  
+}
+
+/* format the text in genre divs */
+a {
+  color:rgb(255, 255, 255);
+  font-weight:bolder;
+  font-style: italic;
+  text-decoration: none;
+  font-size:20pt;
+  text-decoration-line: overline;
+  text-align: center;
+
+}
+
+a p{
+
+  /* align-content: center; */
+  padding-top: 50px;
+}
+
+
+.surprise_me_container{
+  grid-area: surprise_me_container;
+  /* margin-left: 50px; */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  /* button and the #random_popular_book div will stack on top of each other. */
+  flex-direction: column;
+  /* background-color: aliceblue; */
+
+}
+
+#surprise_me_button{
+  background-color: rgb(161, 129, 90);
+  color:rgb(84, 34, 34);
+  font-weight:bolder;
+  font-style: italic;
+  text-decoration: none;
+  font-size:15pt;
+  
+}
+
+#random_popular_book{
+  /* margin-right: 50px; */
+  color: rgb(84, 34, 34);
+  font-size:15pt;
+  text-align:center;
+}
+
+footer {
+  background-color: #a67c52;
+  height: 200px;
+  padding: 20px;
+  width: 100%;
+}
+
+
+.contact{
+  background-color: rgb(193, 171, 143);
+  display: inline-block;
+  width: 400px;
+  padding-left: 50px;
+  margin-top: 15px;
+  margin-left: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.30);
+  border-radius: 10px;
+}
