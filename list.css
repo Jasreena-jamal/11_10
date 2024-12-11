@@ -52,7 +52,7 @@ header .logo {
 }
 
 header h1 {
-  font-size: 28px;
+  font-size: 33px;
   margin: 0;
   font-weight: bold;
 }
@@ -63,7 +63,7 @@ header p {
 }
 
 .genre-title {
-font-size: 33px;
+font-size: 28px;
 text-align: center;
 color: #3e2723; /* Rich brown */
 margin-bottom: 1em;
