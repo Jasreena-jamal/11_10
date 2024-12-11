@@ -70,7 +70,7 @@ margin-bottom: 1.5em;
 }
 
 /* Genre Heading Styles */
-h2 {
+.genre-title {
 font-size: 2em;
 padding: 10px 15px;
 border-left: 6px solid #5a4635; /* Dark brown */
