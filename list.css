@@ -63,10 +63,10 @@ header p {
 }
 
 .genre-title {
-font-size: 2.5em;
+font-size: 33px;
 text-align: center;
 color: #3e2723; /* Rich brown */
-margin-bottom: 0.5em;
+margin-bottom: 1em;
 }
 
 /* Genre Heading Styles */
