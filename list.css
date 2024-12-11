@@ -79,6 +79,7 @@ color: #8d6e63;
     padding: 20px;
     width: 100%;
     margin: 0;
+    position: relative; 
 }
 
 .contact{
