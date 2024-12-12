@@ -65,7 +65,7 @@ header p {
 .genre-title {
 font-size: 40px;
 text-align: center;
-color: #3e2723; /* Rich brown */
+color: #3e2723; 
 margin-bottom: 1em;
 }
 
@@ -73,7 +73,7 @@ margin-bottom: 1em;
 h2 {
 font-size: 2em;
 padding: 10px 15px;
-border-left: 6px solid #5a4635; /* Dark brown */
+border-left: 6px solid #5a4635;
 text-transform: uppercase;
 }
 
@@ -83,9 +83,8 @@ text-transform: uppercase;
 .mystery h2,
 .ya h2,
 .classics h2 {
-background-color: #ede0d4; /* Beige */
-color: #6d4c41; /* Brown */
-}
+background-color: #ede0d4;
+color: #6d4c41; 
 
 section {
   padding: 20px;
